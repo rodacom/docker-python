@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 
 RUN sed -i "s/httpredir/ftp2.fr/g" /etc/apt/sources.list \
  && apt-get update -y -qq \
