@@ -8,5 +8,6 @@ RUN sed -i "s/httpredir/ftp2.fr/g" /etc/apt/sources.list \
 RUN echo 'fr_FR.UTF-8 UTF-8' > /etc/locale.gen \
  && locale-gen
 
-ENV LANG=fr_FR.UTF-8
+RUN pip install pipenv
 
+ENV LANG=fr_FR.UTF-8
