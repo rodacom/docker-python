@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 RUN sed -i "s/httpredir/ftp2.fr/g" /etc/apt/sources.list \
  && apt-get update -y -qq \
